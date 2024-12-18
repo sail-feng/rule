@@ -55,11 +55,16 @@
       }
     },
     {
-      "type": "mixed",
-      "listen": "127.0.0.1",
-      "listen_port": 2080,
-      "sniff": true,
-      "users": []
+      "type": "socks",
+      "tag": "socks-in",
+      "listen": "0.0.0.0",
+      "listen_port": 11024,
+      "users": [
+        {
+          "username": "Clash",
+          "username": "jun101218"
+        }
+      ]
     }
   ],
 
