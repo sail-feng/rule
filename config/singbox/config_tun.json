@@ -55,6 +55,12 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "ss-in",
+      "listen": "::",
+      "listen_port": 11024,
+      "method": "aes-128-gcm",
+      "password": "jun101218",
     }
   ],
 
