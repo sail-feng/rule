@@ -64,7 +64,8 @@
             "username": "Clash",
             "password": "jun101218"
           }
-        ]
+        ],
+        "sniff": true
     }
   ],
 
