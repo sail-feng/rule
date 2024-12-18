@@ -61,8 +61,8 @@
         "listen_port": 11024,
         "users": [
           {
-            "username": "admin",
-            "password": "admin"
+            "username": "Clash",
+            "password": "jun101218"
           }
         ]
     }
