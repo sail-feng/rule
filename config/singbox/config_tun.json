@@ -57,12 +57,12 @@
       {
         "type": "socks",
         "tag": "socks-in",
-        "listen": "::",
+        "listen": "0.0.0.0",
         "listen_port": 11024,
         "users": [
         {
-        "username": "admin",
-        "password": "admin"
+        "username": "Clash",
+        "password": "jun101218"
         }
       ]
       }
