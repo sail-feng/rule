@@ -55,16 +55,6 @@
       }
     },
     {
-        "type": "socks",
-        "tag": "socks-in",
-        "listen": "0.0.0.0",
-        "listen_port": 11024,
-        "users": [
-          {
-            "username": "Clash",
-            "password": "jun101218"
-          }
-        ]
     }
   ],
 
