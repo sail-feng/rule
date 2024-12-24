@@ -35,7 +35,10 @@
       { "rule_set": "geosite-geolocation-!cn", "server": "proxyDns" }
     ],
     "final": "proxyDns",
-    "strategy": "ipv4_only"
+    "strategy": "ipv4_only",
+    "disable_cache": false,
+    "disable_expire": false,
+    "independent_cache": false
   },
 
     "inbounds": [
