@@ -104,6 +104,7 @@
       { "clash_mode": "direct", "outbound": "🎯 全球直连" },
       { "clash_mode": "global", "outbound": "GLOBAL" },
       { "domain": ["clash.razord.top", "yacd.metacubex.one", "yacd.haishan.me", "d.metacubex.one"], "outbound": "🎯 全球直连" },
+      { "domain_suffix": ["serv00.com"], "outbound": "🎯 全球直连" },
       { "domain_suffix": ["qichiyu.com", "emby.wtf"], "outbound": "🚀 节点选择" },
       { "ip_cidr": ["192.9.237.144/32", "150.230.47.174/32", "146.235.203.193/32", "35.212.236.232/32"], "outbound": "🎯 全球直连" },
       { "rule_set": ["geosite-private", "geoip-private"], "outbound": "🎯 全球直连" },
