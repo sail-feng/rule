@@ -86,6 +86,7 @@
       { "clash_mode": "direct", "outbound": "🎯 全球直连" },
       { "clash_mode": "global", "outbound": "GLOBAL" },
       { "domain": ["clash.razord.top", "yacd.metacubex.one", "yacd.haishan.me", "d.metacubex.one"], "outbound": "🎯 全球直连" },
+      { "domain_suffix": ["emby.wtf"], "outbound": "🚀 节点选择" },
       { "ip_cidr": ["192.168.1.0/24"], "outbound": "HomeProxy" },
       { "wifi_ssid": ["Jane_5G"], "outbound": "🎯 全球直连" },
       { "rule_set": ["geosite-private", "geoip-private"], "outbound": "🎯 全球直连" },
