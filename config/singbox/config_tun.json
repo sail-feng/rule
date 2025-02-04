@@ -99,7 +99,7 @@
         "auto_detect_interface": true,
         "final": "🐠 漏网之鱼",
     "rules": [
-      { "sniff": true }
+      { "sniff": true },
       { "protocol": "dns", "action": "hijack-dns" },
       { "clash_mode": "direct", "outbound": "🎯 全球直连" },
       { "clash_mode": "global", "outbound": "GLOBAL" },
