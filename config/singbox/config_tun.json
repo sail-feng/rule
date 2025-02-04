@@ -93,7 +93,6 @@
     { "tag": "♻️ 自动选择", "type": "urltest", "outbounds": ["{all}"], "filter": [{ "action": "exclude", "keywords": ["网站|地址|剩余|过期|时间|有效"] }], "url": "http://www.gstatic.com/generate_204", "interval": "3m", "tolerance": 100 },
     { "tag": "GLOBAL", "type": "selector", "outbounds": ["🚀 节点选择","🎯 全球直连"] },
     { "tag": "🎯 全球直连", "type": "direct" },
-    { "tag": "dns-out", "type": "dns" }
   ],
   
   "route": {
@@ -101,6 +100,7 @@
         "final": "🐠 漏网之鱼",
     "rules": [
       { "inbound": "tun", "action": "sniff"},
+      { "protocal": "dns", "action": "hijack-dns"},
       { "type": "logical", "mode": "or", "rules": [{ "port": 53 }, { "protocol": "dns" }], "outbound": "dns-out" },
       { "clash_mode": "direct", "outbound": "🎯 全球直连" },
       { "clash_mode": "global", "outbound": "GLOBAL" },
