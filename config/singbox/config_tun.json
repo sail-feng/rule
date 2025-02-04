@@ -94,7 +94,7 @@
         "auto_detect_interface": true,
         "final": "🐠 漏网之鱼",
     "rules": [
-      { "inbound": "tun-in“, "action": "sniff" },
+      { "inbound": "tun-in", "action": "sniff" },
       { "inbound": "socks-in", "action": "sniff" },
       { "protocol": "dns", "action": "hijack-dns" },      
       { "clash_mode": "direct", "outbound": "🎯 全球直连" },
