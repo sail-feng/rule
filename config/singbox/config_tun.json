@@ -44,7 +44,7 @@
     "inbounds": [
     {
       "type": "tun",
-      "tag": "tun-in"
+      "tag": "tun-in",
       "address": "172.19.0.1/30",
       "mtu": 9000,
       "auto_route": true,
