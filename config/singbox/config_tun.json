@@ -41,7 +41,8 @@
     "independent_cache": false
   },
 
-    "inbounds": [
+    "inbounds": 
+  [
     {
       "type": "tun",
       "tag": "tun-in",
@@ -62,7 +63,8 @@
         "tag": "socks-in",
         "listen": "0.0.0.0",
         "listen_port": 11024,
-        "users": [
+        "users": 
+        [
           {
             "username": "Clash",
             "password": "jun101218"
