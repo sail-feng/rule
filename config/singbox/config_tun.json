@@ -99,7 +99,7 @@
         "final": "🐠 漏网之鱼",
     "rules": [
       { "inbound": "tun", "sniff": true },
-      { "inbound": "socks-in", "sniff": true },
+      { "inbound": "socks", "sniff": true },
       { "protocol": "dns", "action": "hijack-dns" },
       { "clash_mode": "direct", "outbound": "🎯 全球直连" },
       { "clash_mode": "global", "outbound": "GLOBAL" },
