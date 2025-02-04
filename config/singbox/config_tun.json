@@ -47,7 +47,6 @@
       "address": "172.19.0.1/30",
       "mtu": 9000,
       "auto_route": true,
-      "sniff": true,
       "stack": "mixed",
       "platform": {
         "http_proxy": {
@@ -101,6 +100,7 @@
         "auto_detect_interface": true,
         "final": "🐠 漏网之鱼",
     "rules": [
+      { "inbound": "tun", "action": "sniff"},
       { "type": "logical", "mode": "or", "rules": [{ "port": 53 }, { "protocol": "dns" }], "outbound": "dns-out" },
       { "clash_mode": "direct", "outbound": "🎯 全球直连" },
       { "clash_mode": "global", "outbound": "GLOBAL" },
