@@ -5,8 +5,10 @@
     "timestamp": true
   },
   
-  "experimental": {
-    "clash_api": {
+  "experimental": 
+  {
+    "clash_api": 
+    {
       "external_controller": "0.0.0.0:9095",
       "external_ui": "/etc/sing-box/ui",
       "secret": "",
@@ -14,7 +16,8 @@
       "external_ui_download_detour": "🎯 全球直连",
       "default_mode": "rule"
     },
-  "cache_file": {
+  "cache_file": 
+    {
     "enabled": true,
     "path": "/etc/sing-box/cache.db",
     "store_fakeip": false
