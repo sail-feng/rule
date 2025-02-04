@@ -49,7 +49,6 @@
       "mtu": 9000,
       "auto_route": true,
       "stack": "mixed",
-      "sniff": true
     },
     {
         "type": "socks",
@@ -61,7 +60,7 @@
             "username": "Clash",
             "password": "jun101218"
           }
-        ],
+        ]
     }
   ],
 
@@ -93,7 +92,9 @@
         "auto_detect_interface": true,
         "final": "🐠 漏网之鱼",
     "rules": [
-      { "clash_mode": "direct", "outbound": "🎯 全球直连" },
+      { "inbound": "tun-in“, "action": "sniff"},
+      { "inbound": "socks-in", "action": "sniff" },
+      { "protocol": "dns", "action": "hijack-dns" },      { "clash_mode": "direct", "outbound": "🎯 全球直连" },
       { "clash_mode": "global", "outbound": "GLOBAL" },
       { "domain": ["clash.razord.top", "yacd.metacubex.one", "yacd.haishan.me", "d.metacubex.one"], "outbound": "🎯 全球直连" },
       { "domain_suffix": ["serv00.com"], "outbound": "🎯 全球直连" },
