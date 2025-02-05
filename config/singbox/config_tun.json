@@ -24,13 +24,16 @@
     }
   },
   
-  "dns": {
-    "servers": [
+  "dns": 
+  {
+    "servers": 
+    [
       {"tag": "proxyDns", "address": "https://dns.google/dns-query", "address_resolver": "defaultDns", "address_strategy": "ipv4_only", "strategy": "ipv4_only", "detour": "🚀 节点选择"},
       {"tag": "localDns", "address": "223.5.5.5", "strategy": "ipv4_only", "detour": "🎯 全球直连"},
       {"tag": "defaultDns", "address": "223.5.5.5", "strategy": "ipv4_only", "detour": "🎯 全球直连"}
     ],
-    "rules": [
+    "rules": 
+    [
       { "outbound": "any", "server": "defaultDns"},
       { "clash_mode": "direct", "server": "localDns" },
       { "clash_mode": "global", "server": "proxyDns" },
@@ -44,7 +47,7 @@
     "independent_cache": false
   },
 
-    "inbounds": 
+  "inbounds": 
   [
     {
       "type": "tun",
@@ -66,7 +69,7 @@
             "password": "jun101218"
           }
         ]
-    }
+     }
   ],
 
   "outbounds": [
