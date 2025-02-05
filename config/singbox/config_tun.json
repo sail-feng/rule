@@ -63,7 +63,7 @@
       "listen": "0.0.0.0",
       "listen_port": 11024,
       "users": 
-      [ { "username": "Clash", "password": "jun101218" ],
+      [ { "username": "Clash", "password": "jun101218" } ],
       "sniff": true
      }
   ],
