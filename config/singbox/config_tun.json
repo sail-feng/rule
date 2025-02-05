@@ -55,7 +55,9 @@
       "mtu": 9000,
       "sniff": true,
       "auto_route": true,
-      "stack": "mixed"
+      "stack": "mixed",
+      "platform": {
+      }
     },
     {
       "type": "socks",
