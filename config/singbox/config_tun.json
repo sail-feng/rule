@@ -50,13 +50,10 @@
   "inbounds": 
   [
     {
-      "type": "tun",
-      "address": "172.19.0.1/30",
-      "mtu": 9000,
-      "auto_route": true,
-      "stack": "mixed",
-      "platform": {
-      }
+      "type": "tproxy",
+      "tag": "tproxy-in",
+      "listen": "0.0.0.0",
+      "listen_port": 7895
     },
     {
       "type": "socks",
