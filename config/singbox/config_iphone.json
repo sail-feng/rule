@@ -34,7 +34,6 @@
       "address": "172.19.0.1/30",
       "mtu": 9000,
       "auto_route": true,
-      
       "stack": "system",
       "platform": {
         "http_proxy": {
@@ -48,7 +47,6 @@
       "type": "mixed",
       "listen": "127.0.0.1",
       "listen_port": 2080,
-      
       "users": []
     }
   ],
@@ -74,8 +72,7 @@
     { "tag": "♻️ 自动选择", "type": "urltest", "outbounds": ["{all}"], "filter": [{ "action": "exclude", "keywords": ["网站|地址|剩余|过期|时间|有效"] }], "url": "http://www.gstatic.com/generate_204", "interval": "10m", "tolerance": 50 },
     { "tag": "GLOBAL", "type": "selector", "outbounds": ["🚀 节点选择","🎯 全球直连"] },
     { "tag": "HomeProxy", "type": "socks", "server":"bullground.x3322.net", "server_port": 11024, "version": "5", "username": "Clash", "password": "jun101218"},
-    { "tag": "🎯 全球直连", "type": "direct" },
-
+    { "tag": "🎯 全球直连", "type": "direct" }
   ],
   
   "route": {
