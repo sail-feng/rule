@@ -34,7 +34,7 @@
       "address": "172.19.0.1/30",
       "mtu": 9000,
       "auto_route": true,
-      "sniff": true,
+      
       "stack": "system",
       "platform": {
         "http_proxy": {
@@ -75,14 +75,15 @@
     { "tag": "GLOBAL", "type": "selector", "outbounds": ["🚀 节点选择","🎯 全球直连"] },
     { "tag": "HomeProxy", "type": "socks", "server":"bullground.x3322.net", "server_port": 11024, "version": "5", "username": "Clash", "password": "jun101218"},
     { "tag": "🎯 全球直连", "type": "direct" },
-    { "tag": "dns-out", "type": "dns" }
+
   ],
   
   "route": {
         "auto_detect_interface": true,
         "final": "🐠 漏网之鱼",
     "rules": [
-      { "type": "logical", "mode": "or", "rules": [{ "port": 53 }, { "protocol": "dns" }], "outbound": "dns-out" },
+      { "action": "sniff" },
+      { "protocol": "dns", "action": "hijack-dns" },
       { "clash_mode": "direct", "outbound": "🎯 全球直连" },
       { "clash_mode": "global", "outbound": "GLOBAL" },
       { "domain": ["clash.razord.top", "yacd.metacubex.one", "yacd.haishan.me", "d.metacubex.one"], "outbound": "🎯 全球直连" },
