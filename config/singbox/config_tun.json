@@ -51,6 +51,7 @@
   [
   {
     "type": "tun",
+    "tag": "tun-in",
     "address": ["172.19.0.1/30", "fdfe:dcba:9876::1/126"],
     "mtu": 9000,
     "auto_route": true,
@@ -65,8 +66,8 @@
       }
     },
     {
-      "type": "socks",
-      "tag": "socks-in",
+      "type": "mixed",
+      "tag": "mixed-in",
       "listen": "0.0.0.0",
       "listen_port": 11024,
       "users": 
@@ -99,11 +100,11 @@
   ],
   
   "route": {
-        "auto_detect_interface": true,
-        "final": "🐠 漏网之鱼",
-    "rules": [
-      { "action": "sniff" },
-      { "protocol": "dns", "action": "hijack-dns" },  
+      "auto_detect_interface": true,
+      "final": "🐠 漏网之鱼",
+      "rules": [
+      { "inbound": ["mixed-in", "tun-in"], "action": "sniff" },
+      { "type": "logical", "mode": "or", "rules": [ {"protocol": "dns"}, {"port": 53 } ], "action": "hijack-dns" }, 
       { "clash_mode": "direct", "outbound": "🎯 全球直连" },
       { "clash_mode": "global", "outbound": "GLOBAL" },
       { "domain": ["clash.razord.top", "yacd.metacubex.one", "yacd.haishan.me", "d.metacubex.one"], "outbound": "🎯 全球直连" },
