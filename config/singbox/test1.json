@@ -110,6 +110,8 @@
       "tag": "mixed-in",
       "listen": "::",
       "listen_port": 11024
+      "users": 
+      [ { "username": "Clash", "password": "jun101218" } ]
     }
   ],
   "outbounds": [
