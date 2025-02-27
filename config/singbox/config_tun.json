@@ -95,7 +95,6 @@
       "auto_detect_interface": true,
       "final": "🐠 漏网之鱼",
       "rules": [
-      { "wifi_ssid": ["Jane_5G"], "outbound": "🎯 全球直连" },
       { "action": "sniff" },
       { "protocol": "dns", "action": "hijack-dns"} ,
       { "clash_mode": "direct", "outbound": "🎯 全球直连" },
