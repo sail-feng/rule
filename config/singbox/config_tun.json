@@ -100,7 +100,7 @@
       { "clash_mode": "direct", "outbound": "🎯 全球直连" },
       { "clash_mode": "global", "outbound": "GLOBAL" },
       { "domain": ["clash.razord.top", "yacd.metacubex.one", "yacd.haishan.me", "d.metacubex.one"], "outbound": "🎯 全球直连" },
-      { "domain_suffix": ["serv00.com"], "outbound": "🎯 全球直连" },
+      { "domain_suffix": ["serv00.com","snssdk.com"], "outbound": "🎯 全球直连" },
       { "domain_suffix": ["scorecardresearch.com"], "outbound": "reject" },
       { "port": [ 22 ], "outbound": "🎯 全球直连" },
       { "domain_suffix": ["qichiyu.com", "emby.wtf"], "outbound": "📺 MyEmby" },
