@@ -85,7 +85,7 @@
       { "clash_mode": "direct", "outbound": "🎯 全球直连" },
       { "clash_mode": "global", "outbound": "GLOBAL" },
       { "domain": ["clash.razord.top", "yacd.metacubex.one", "yacd.haishan.me", "d.metacubex.one"], "outbound": "🎯 全球直连" },
-      { "domain_suffix": ["snssdk.com"], "outbound": "🎯 全球直连" },
+      { "domain_suffix": ["snssdk.com","cheweiguanjia.com"], "outbound": "🎯 全球直连" },
       { "domain_suffix": ["emby.wtf"], "outbound": "🚀 节点选择" },
       { "domain_suffix": ["scorecardresearch.com"], "outbound": "reject" },
       { "ip_cidr": ["192.168.1.0/24"], "outbound": "HomeProxy" },
