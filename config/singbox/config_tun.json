@@ -29,7 +29,7 @@
     "servers": 
     [
       {"tag": "proxyDns", "address": "tls://8.8.8.8", "strategy": "ipv4_only", "detour": "🚀 节点选择"},
-      {"tag": "localDns", "address": "223.5.5.5", "strategy": "ipv4_only", "detour": "direct"}
+      {"tag": "localDns", "address": "223.5.5.5", "strategy": "ipv4_only", "detour": "🎯 全球直连"}
     ],
     "rules": 
     [
