@@ -93,7 +93,6 @@
   
   "route": {
       "auto_detect_interface": true,
-      "final": "🐠 漏网之鱼",
       "rules": [
       { "action": "sniff" },
       { "protocol": "dns", "action": "hijack-dns"} ,
@@ -118,7 +117,8 @@
       { "rule_set": ["geoip-netflix", "geosite-netflix"], "outbound": "🎥 Netflix" },
       { "rule_set": ["geoip-telegram", "geosite-telegram"], "outbound": "📲 Telegram" },
       { "rule_set": "geosite-geolocation-!cn", "outbound": "🚀 节点选择" },
-      { "rule_set": ["geoip-cn", "geosite-cn"], "outbound": "🎯 全球直连" }
+      { "rule_set": ["geoip-cn", "geosite-cn"], "outbound": "🎯 全球直连" },
+      "final": "🐠 漏网之鱼"
     ],
     
     "rule_set": [
