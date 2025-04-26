@@ -79,7 +79,7 @@
     { "tag": "🎥 Netflix", "type": "selector", "outbounds": ["🚀 节点选择", "♻️ 自动选择", "🔯 香港自动", "🇭🇰 香港节点", "🇯🇵 日本节点", "🇺🇲 美国节点", "🐸 手动切换"] },
     { "tag": "📲 Telegram", "type": "selector", "outbounds": ["🚀 节点选择", "♻️ 自动选择", "🔯 香港自动", "🇭🇰 香港节点", "🇯🇵 日本节点", "🇺🇲 美国节点", "🐸 手动切换"] },
     { "tag": "🍏 Apple", "type": "selector", "outbounds": ["🎯 全球直连", "🇭🇰 香港节点", "🇯🇵 日本节点", "🇺🇲 美国节点"] },
-    { "tag": "📺 MyEmby", "type": "selector", "outbounds": ["🔯 香港自动", "🚀 节点选择", "♻️ 自动选择", "🇭🇰 香港节点", "🇯🇵 日本自动", "🇺🇲 美国自动", "🐸 手动切换"] },
+    { "tag": "📺 MyEmby", "type": "selector", "outbounds": ["🔯 香港自动", "🚀 节点选择", "♻️ 自动选择", "🇭🇰 香港节点", "🇯🇵 日本节点", "🇺🇲 美国节点", "🐸 手动切换"] },
     { "tag": "🐠 漏网之鱼", "type": "selector", "outbounds": ["🚀 节点选择","🎯 全球直连"] },
     { "tag": "🐸 手动切换", "type": "selector", "outbounds": ["{all}"]},
     { "tag": "🇭🇰 香港节点", "type": "selector", "outbounds": ["{all}"], "filter": [{ "action": "include", "keywords": ["🇭🇰|HK|hk|香港|港|HongKong"] }] },
