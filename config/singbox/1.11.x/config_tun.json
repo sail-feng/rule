@@ -62,6 +62,7 @@
     "tag": "mixed-in",
     "listen": "127.0.0.1",
     "listen_port": 11024,
+    "sniff": true,
     "users": 
     [ { "username": "Clash", "password": "jun101218" } ]
   }
