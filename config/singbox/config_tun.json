@@ -54,6 +54,13 @@
     "auto_redirect": true,
     "strict_route": true,
     "stack": "mixed"
+    "platform": {
+      "http_proxy": {
+        "enabled": true,
+        "server": "127.0.0.1",
+        "server_port": 11024
+      }
+    }
   },
   {
     "type": "mixed",
