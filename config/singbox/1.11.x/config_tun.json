@@ -30,7 +30,6 @@
    ],
    "rules": 
    [
-     {"outbound": "any", "server": "dns_direct", "disable_cache": true},
      {"clash_mode": "direct", "server": "dns_direct"},
      {"clash_mode": "global", "server": "dns_proxy"},
      {"domain_suffix": "ggff.net", "server":"dns_proxy"},
