@@ -86,7 +86,7 @@
   "route": 
  {
    "auto_detect_interface": true,
-   "default_domain_resolver": {"server": "dns_proxy"},
+   "default_domain_resolver": {"server": "dns_direct"},
    "rules": 
    [
      {"action": "sniff"},
