@@ -29,7 +29,7 @@
      {"tag": "dns_direct", "type": "udp", "server": "218.4.4.4", "detour": "🎯 全球直连" },
      {"tag": "dns_domain", "type": "udp", "server": "1.1.1.1", "detour": "🎯 全球直连" },
      {"tag": "dns_proxy", "type": "tls", "server": "8.8.8.8", "detour": "🚀 节点选择"},
-     {"tag": "dns_fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15","inet6_range": "fc00::/18"}
+     {"tag": "dns_fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15"}
    ],
    "rules": 
    [
