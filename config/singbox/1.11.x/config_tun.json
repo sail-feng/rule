@@ -25,7 +25,7 @@
  {
    "servers": 
    [
-     {"tag": "dns_direct", "type": "https", "server": "218.4.4.4", "detour": "🎯 全球直连"},
+     {"tag": "dns_direct", "type": "https","server": "218.4.4.4", "detour": "🎯 全球直连"},
      {"tag": "dns_proxy", "type": "https", "server": "8.8.8.8", "detour": "🚀 节点选择"}
    ],
    "rules": 
