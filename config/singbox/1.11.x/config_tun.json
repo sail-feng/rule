@@ -16,6 +16,7 @@
     },
   "cache_file": {
     "enabled": true,
+    "store_fakeip": true,
     "path": "/etc/sing-box/cache.db",
     "store_fakeip": false
     }
@@ -27,14 +28,15 @@
    [
      {"tag": "dns_direct", "type": "udp", "server": "218.4.4.4", "detour": "🎯 全球直连" },
      {"tag": "dns_domain", "type": "udp", "server": "1.1.1.1", "detour": "🎯 全球直连" },
-     {"tag": "dns_proxy", "type": "tls", "server": "8.8.8.8", "detour": "🚀 节点选择"}
+     {"tag": "dns_proxy", "type": "tls", "server": "8.8.8.8", "detour": "🚀 节点选择"},
+     {"tag": "dns_fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15","inet6_range": "fc00::/18"}
    ],
    "rules": 
    [
      {"clash_mode": "Direct", "server": "dns_direct"},
      {"clash_mode": "Global", "server": "dns_proxy"},
      {"rule_set": "geosite-cn", "action": "route","server": "dns_direct"},
-     {"rule_set": "geosite-geolocation-!cn", "server": "dns_proxy"}
+     {"rule_set": "geosite-geolocation-!cn", "server": "dns_fakeip"}
    ],
    "final": "dns_proxy",
    "strategy": "ipv4_only"
