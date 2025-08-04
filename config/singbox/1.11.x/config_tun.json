@@ -25,8 +25,8 @@
  {
    "servers": 
    [
-     {"tag": "dns_direct", "type": "udp", "server": "218.4.4.4"},
-     {"tag": "dns_domain", "type": "udp", "server": "1.1.1.1"},
+     {"tag": "dns_direct", "type": "local", "detour": "direct"},
+     {"tag": "dns_domain", "type": "udp", "server": "1.1.1.1", "detour": "direct"},
      {"tag": "dns_proxy", "type": "tls", "server": "8.8.8.8", "detour": "🚀 节点选择"},
      {"tag": "dns_fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15"}
    ],
@@ -36,7 +36,6 @@
      {"clash_mode": "Global", "server": "dns_proxy"},
      {"rule_set": "geosite-cn", "action": "route","server": "dns_direct"},
      {"query_type":["A","AAAA"],"server": "dns_fakeip"},
-     {"rule_set": "geosite-geolocation-!cn", "server": "dns_proxy"}
    ],
    "final": "dns_proxy",
    "strategy": "ipv4_only"
