@@ -32,10 +32,10 @@
    ],
    "rules": 
    [
-     {"clash_mode": "Direct", "server": "dns_direct"},
-     {"clash_mode": "Global", "server": "dns_proxy"},
-     {"rule_set": "geosite-cn", "action": "route","server": "dns_direct"},
-     {"query_type":["A","AAAA"],"server": "dns_fakeip"}
+     {"clash_mode": "Direct", "action": "route", "server": "dns_direct"},
+     {"clash_mode": "Global", "action": "route", "server": "dns_proxy"},
+     {"rule_set": "geosite-cn", "action": "route", "server": "dns_direct"},
+     {"query_type":["A","AAAA"], "action": "route", "server": "dns_fakeip"}
    ],
    "final": "dns_proxy",
    "strategy": "ipv4_only"
