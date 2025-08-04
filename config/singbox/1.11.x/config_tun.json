@@ -38,7 +38,8 @@
      {"query_type":["A","AAAA"], "action": "route", "server": "dns_fakeip"}
    ],
    "final": "dns_proxy",
-   "strategy": "ipv4_only"
+   "strategy": "ipv4_only",
+   "independent_cache": true
 },
 
 "inbounds": [
