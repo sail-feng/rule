@@ -29,7 +29,7 @@
      {"tag": "dns_domain", "type": "udp", "server": "1.1.1.1"},
      {"tag": "dns_proxy", "type": "tls", "server": "8.8.8.8", "detour": "🚀 节点选择"},
      {"tag": "dns_emby", "type": "tls", "server": "8.8.8.8", "detour": "📺 MyEmby"},
-     {"tag": "dns_fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15"}
+     {"tag": "dns_fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15","inet6_range": "fc00::/18"}
    ],
    "rules": 
    [
@@ -42,14 +42,15 @@
      {"query_type":["A","AAAA"], "action": "route", "server": "dns_fakeip"}
    ],
    "final": "dns_proxy",
-   "strategy": "ipv4_only",
+   "strategy": "prefer_ipv4",
    "independent_cache": true
 },
 
 "inbounds": [
   {
     "type": "tun",
-    "address": "172.19.0.1/30",
+    "inet4_address": "172.19.0.1/30",
+    "inet6_address": "fdfe:dcba:9876::1/126",
     "mtu": 9000,
     "auto_route": true,
     "strict_route": true,
