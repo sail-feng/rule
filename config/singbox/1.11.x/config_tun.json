@@ -42,7 +42,7 @@
      {"query_type":["A","AAAA"], "action": "route", "server": "dns_fakeip"}
    ],
    "final": "dns_proxy",
-   "strategy": "prefer_ipv4",
+   "strategy": "ipv4_only",
    "independent_cache": true
 },
 
