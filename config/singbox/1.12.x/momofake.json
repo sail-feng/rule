@@ -4,7 +4,7 @@
       {"tag": "local", "type": "udp", "server": "218.2.2.2"},
       {"tag": "public", "type": "udp", "server": "1.1.1.1"},
       {"tag": "foreign", "type": "https", "server": "dns.google", "domain_resolver": "local"},
-      {"tag": "fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/18"}
+      {"tag": "fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15"}
     ],
     "rules": [
       {"query_type": "HTTPS", "action": "reject"},
