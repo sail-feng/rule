@@ -3,7 +3,7 @@
     "servers": [
       {"tag": "local", "type": "udp", "server": "218.2.2.2"},
       {"tag": "public", "type": "udp", "server": "1.1.1.1"},
-      {"tag": "foreign", "type": "https", "server": "dns.google", "domain_resolver": "public", "detour":"🚀 默认代理"},
+      {"tag": "foreign", "type": "tls", "server": "8.8.8.8", "detour":"🚀 默认代理"},
       {"tag": "fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15","inet6_range": "fc00::/18"}
     ],
     "rules": [
@@ -14,7 +14,7 @@
       {"query_type": ["A", "AAAA"], "server": "fakeip", "rewrite_ttl": 1}
     ],
     "final": "foreign",
-    "strategy": "ipv4_only",
+    "strategy": "prefer_ipv4",
     "independent_cache": true
   },
   "outbounds": [
