@@ -4,7 +4,7 @@
       {"tag": "local", "type": "udp", "server": "218.2.2.2"},
       {"tag": "public", "type": "udp", "server": "1.1.1.1"},
       {"tag": "foreign", "type": "tls", "server": "8.8.8.8", "detour":"🚀 默认代理"},
-      {"tag": "fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15","inet6_range": "fc00::/18"}
+      {"tag": "fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15"}
     ],
     "rules": [
       {"query_type": "HTTPS", "action": "reject"},
@@ -14,7 +14,7 @@
       {"query_type": ["A", "AAAA"], "server": "fakeip", "rewrite_ttl": 1}
     ],
     "final": "foreign",
-    "strategy": "prefer_ipv4",
+    "strategy": "ipv4_only",
     "independent_cache": true
   },
   "outbounds": [
@@ -133,8 +133,7 @@
       "type": "tun",
       "interface_name": "momo",
       "address": [
-        "172.31.0.1/30",
-        "fdfe:dcba:9876::1/126"
+        "172.31.0.1/30"
       ],
       "auto_route": false,
       "auto_redirect": false
