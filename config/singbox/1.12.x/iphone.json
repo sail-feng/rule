@@ -46,12 +46,12 @@
   ],
   "route": {
     "rules": [
-      {"wifi_ssid": "Jane_5G", "outbound": "🎯 全球直连"},
       {"action": "sniff", "sniffer": ["http", "tls", "quic", "dns"]},
       {"type": "logical", "mode": "or", "rules": [{"port": 53}, {"protocol": "dns"}], "action": "hijack-dns"},
       {"ip_is_private": true, "outbound": "🎯 全球直连"},
       {"clash_mode": "direct", "outbound": "🎯 全球直连"},
       {"clash_mode": "global", "outbound": "GLOBAL"},
+      {"wifi_ssid": "Jane_5G", "outbound": "🎯 全球直连"},
       {"domain": ["clash.razord.top", "yacd.metacubex.one", "yacd.haishan.me", "d.metacubex.one"], "action": "route", "outbound": "🎯 全球直连"},
       {"domain_suffix": ["serv00.com","snssdk.com","wjedu.net","aliapp.org"], "action": "route", "outbound": "🎯 全球直连" },
       {"port": [ 22 ], "action": "route", "outbound": "🎯 全球直连" },
