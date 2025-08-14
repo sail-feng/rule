@@ -54,7 +54,7 @@
       {"domain": ["clash.razord.top", "yacd.metacubex.one", "yacd.haishan.me", "d.metacubex.one"], "action": "route", "outbound": "🎯 全球直连"},
       {"domain_suffix": ["serv00.com","snssdk.com","wjedu.net","aliapp.org"], "action": "route", "outbound": "🎯 全球直连" },
       {"port": [ 22 ], "action": "route", "outbound": "🎯 全球直连" },
-      {"ip_cidr": ["192.168.1.20/32","114.114.114.114/32"], "action": "route", "outbound": "🎯 全球直连"},
+      {"ip_cidr": ["192.168.1.20/32"], "action": "route", "outbound": "🎯 全球直连"},
       {"domain_suffix": ["emby.wtf"], "action": "route", "outbound": "📺 MyEmby" },
       {"domain_suffix": ["qichiyu.com"], "action": "route", "outbound": "🚀 默认代理" },
       {"rule_set": "geosite-ai", "outbound": "🧠 AI"},
