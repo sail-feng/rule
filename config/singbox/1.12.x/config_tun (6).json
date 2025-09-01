@@ -101,7 +101,7 @@
      {"clash_mode": "Direct", "action": "route", "outbound": "🎯 全球直连"},
      {"clash_mode": "Global", "action": "route", "outbound": "🚀 节点选择"},
      {"domain": ["clash.razord.top", "yacd.metacubex.one", "yacd.haishan.me", "d.metacubex.one"], "action": "route", "outbound": "🎯 全球直连"},
-     {"domain_suffix": ["serv00.com","snssdk.com","wjedu.net","aliapp.org"], "action": "route", "outbound": "🎯 全球直连" },
+     {"domain_suffix": ["serv00.com","snssdk.com","wjedu.net","aliapp.org","ctobsnssdk.com"], "action": "route", "outbound": "🎯 全球直连" },
      {"port": [ 22 ], "action": "route", "outbound": "🎯 全球直连" },
      {"ip_cidr": ["192.168.1.20/32"], "action": "route", "outbound": "🎯 全球直连"},
      {"domain_suffix": ["emby.wtf"], "action": "route", "outbound": "📺 MyEmby" },
