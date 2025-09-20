@@ -114,7 +114,11 @@
       "tag": "socks-in",
       "type": "socks",
       "listen": "::",
-      "listen_port": 1080
+      "listen_port": 11024,
+      "users": 
+      [ 
+        { "username": "Clash", "password": "jun101218" } 
+      ]
     },
     {
       "tag": "redirect-in",
