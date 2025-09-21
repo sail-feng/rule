@@ -52,7 +52,7 @@
       {"clash_mode": "direct", "outbound": "🎯 全球直连"},
       {"clash_mode": "global", "outbound": "GLOBAL"},
       {"port": [ 22 ], "outbound": "🎯 全球直连" },
-      {"source_ip_cidr": ["192.168.1.147", "192.168.1.205"], "outbound": "🎯 全球直连"},
+      {"source_ip_cidr": ["192.168.1.147", "192.168.1.205", "192.168.1.100"], "outbound": "🎯 全球直连"},
       {"domain_suffix": ["xinchengyuanwei.com", "wjedu.net"], "outbound": "🎯 全球直连" },
       {"rule_set": "geosite-ai", "outbound": "🧠 AI"},
       {"rule_set": "geosite-youtube", "outbound": "📹 YouTube"},
