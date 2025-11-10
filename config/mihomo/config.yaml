@@ -4,7 +4,7 @@
 # 机场订阅
 proxy-providers:
   Airport1:
-    url: "机场订阅填到这里，两端引号不要去掉，不要填写到下方链接里去！！"
+    url: "http://192.168.1.20:3001/CKg2abstVnOeRpm1aB4G/download/collection/Combined"
     type: http
     interval: 86400
     health-check:
