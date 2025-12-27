@@ -52,7 +52,7 @@
       {"clash_mode": "direct", "outbound": "🎯 全球直连"},
       {"clash_mode": "global", "outbound": "GLOBAL"},
       {"port": [ 22 ], "outbound": "🎯 全球直连" },
-      {"source_ip_cidr": ["192.168.1.248/32","192.168.1.203/32","192.168.1.201/32", "114.114.114.114/32"], "outbound": "🎯 全球直连"},
+      {"source_ip_cidr": ["192.168.1.248/32","192.168.1.203/32","192.168.1.201/32", "192.168.1.146/32"], "outbound": "🎯 全球直连"},
       {"source_ip_cidr": ["192.168.1.147/32"], "outbound": "🎯 全球直连"},
       {"source_ip_cidr": ["192.168.1.200/32"], "outbound": "🎯 全球直连"},
       {"domain_suffix": ["xinchengyuanwei.com", "wjedu.net", "chessfull.com", "snssdk.com", "x3322.net", ".lan", "stkouyu.com","seeinnas.com"], "outbound": "🎯 全球直连" },
