@@ -10,9 +10,10 @@
     "rules": [
       {"clash_mode": "direct", "server": "public"},
       {"clash_mode": "global", "server": "fakeip"},
+      {"rule_set": "geosite-fakeipfilter", "server": "local"},
       {"domain_suffix": ["services.googleapis.cn", "googleapis.cn", "xn--ngstr-lra8j.com"], "server": "foreign"},
-      {"rule_set": ["geosite-cn", "geosite-steamcn", "geosite-apple"], "server": "public"},
-      {"query_type": ["A", "AAAA"], "server": "fakeip", "rewrite_ttl": 1}
+      {"query_type": ["A", "AAAA"], "server": "fakeip", "rewrite_ttl": 1},
+      {"rule_set": ["geosite-cn", "geosite-steamcn", "geosite-apple"], "server": "public"}
     ],
     "final": "domain_dns",
     "strategy": "prefer_ipv4",
