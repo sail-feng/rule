@@ -81,7 +81,7 @@
     ],
     "rule_set": [
       {"tag": "mt", "type": "remote", "format": "source", "url": "https://raw.githubusercontent.com/sail-feng/rule/refs/heads/master/mt.json", "download_detour": "🎯 全球直连"},
-      {"tag": "myproxy", "type": "remote", "format": "source", "url": "https://raw.githubusercontent.com/sail-feng/rule/refs/heads/master/proxy.json", "download_detour": "🎯 全球直连"},
+      {"tag": "myproxy", "type": "remote", "format": "source", "url": "https://raw.githubusercontent.com/sail-feng/rule/refs/heads/master/myproxy.json", "download_detour": "🎯 全球直连"},
       {"tag": "geosite-ai", "type": "remote", "format": "binary", "url": "https://github.bullground.ggff.net/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-!cn.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geosite-youtube", "type": "remote", "format": "binary", "url": "https://github.bullground.ggff.net/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/youtube.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geosite-google", "type": "remote", "format": "binary", "url": "https://github.bullground.ggff.net/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/google.srs", "download_detour": "🎯 全球直连"},
