@@ -2,11 +2,12 @@
   "version": 3,
   "rules": [
     {
-      "domain_suffix": [
-        "mt.com",
-		"fortinet.net",
-		"cloudsink.net",
-		"microsoftonline.com"
+    "domain_suffix": [
+    "push.apple.com",
+	"identity.apple.com",
+	"akadns.net",
+	"apple.com.edgekey.net"
+
       ]
     }
   ]
