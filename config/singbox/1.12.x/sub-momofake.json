@@ -55,8 +55,8 @@
       {"source_ip_cidr": ["192.168.1.177/32","192.168.1.205/32","192.168.1.106/32", "192.168.1.145/32"], "outbound": "🎯 全球直连"},
       {"ip_cidr": ["5.28.195.2/32"], "outbound": "📲 Telegram"},
       {"domain_suffix": ["xinchengyuanwei.com", "wjedu.net", "chessfull.com", "snssdk.com", "x3322.net", "stkouyu.com","seeinnas.com"], "outbound": "🎯 全球直连" },
-      {"domain_suffix": ["push.apple.com"], "outbound": "🚀 默认代理" },
       {"rule_set": "mt", "outbound": "🎯 全球直连"},
+      {"rule_set": "proxy", "outbound": "🚀 默认代理"},
       {"rule_set": "geosite-ai", "outbound": "🧠 AI"},
       {"rule_set": "geosite-youtube", "outbound": "📹 YouTube"},
       {"rule_set": "geosite-google", "outbound": "🍀 Google"},
@@ -81,6 +81,7 @@
     ],
     "rule_set": [
       {"tag": "mt", "type": "remote", "format": "source", "url": "https://raw.githubusercontent.com/sail-feng/rule/refs/heads/master/mt.json", "download_detour": "🎯 全球直连"},
+      {"tag": "proxy", "type": "remote", "format": "source", "url": "https://raw.githubusercontent.com/sail-feng/rule/refs/heads/master/proxy.list", "download_detour": "🎯 全球直连"},
       {"tag": "geosite-ai", "type": "remote", "format": "binary", "url": "https://github.bullground.ggff.net/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-!cn.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geosite-youtube", "type": "remote", "format": "binary", "url": "https://github.bullground.ggff.net/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/youtube.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geosite-google", "type": "remote", "format": "binary", "url": "https://github.bullground.ggff.net/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/google.srs", "download_detour": "🎯 全球直连"},
