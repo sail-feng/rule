@@ -52,7 +52,7 @@
       {"clash_mode": "direct", "outbound": "🎯 全球直连"},
       {"clash_mode": "global", "outbound": "GLOBAL"},
       {"port": [ 22 ], "outbound": "🎯 全球直连" },
-      {"source_ip_cidr": ["192.168.1.247/32","192.168.1.107/32","192.168.1.147/32", "192.168.1.121/32"], "outbound": "🎯 全球直连"},
+      {"source_ip_cidr": ["192.168.1.247/32","192.168.1.107/32","192.168.1.147/32", "192.168.1.121/32","192.168.1.116/32"], "outbound": "🎯 全球直连"},
       {"ip_cidr": ["5.28.195.2/32"], "outbound": "📲 Telegram"},
       {"domain_suffix": ["xinchengyuanwei.com", "wjedu.net", "chessfull.com", "snssdk.com", "x3322.net", "stkouyu.com","seeinnas.com"], "outbound": "🎯 全球直连" },
       {"rule_set": "mt", "outbound": "🎯 全球直连"},
