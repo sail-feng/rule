@@ -15,7 +15,7 @@
       {"query_type": ["A", "AAAA"], "server": "fakeip", "rewrite_ttl": 1}
     ],
     "final": "domain_dns",
-    "strategy": "ipv4_only",
+    "strategy": "ipv4_preferred",
     "independent_cache": true,
     "reverse_mapping": true
   },
