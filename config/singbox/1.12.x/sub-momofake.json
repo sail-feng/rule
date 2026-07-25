@@ -3,8 +3,8 @@
     "servers": [
       {"tag": "local", "type": "udp", "server": "223.5.5.5"},
       {"tag": "domain_dns", "type": "udp", "server": "1.1.1.1"},
-      {"tag": "public", "type": "https", "server": "dns.alidns.com", "domain_resolver": "local"},
-      {"tag": "foreign", "type": "tls", "server": "8.8.8.8", "detour": "🚀 默认代理"},
+      {"tag": "public", "type": "https", "server": "https://dns.alidns.com/dns-query", "domain_resolver": "local"},
+      {"tag": "foreign", "type": "tls", "server": "8.8.8.8:853", "sni": "dns.google", "detour": "🚀 默认代理"},
       {"tag": "fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/18"}
     ],
     "rules": [
