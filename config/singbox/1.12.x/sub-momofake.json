@@ -3,16 +3,15 @@
     "servers": [
       {"tag": "local", "type": "udp", "server": "192.168.1.20"},
       {"tag": "domain_dns", "type": "udp", "server": "1.1.1.1"},
-      {"tag": "public", "type": "https", "server": "dns.alidns.com", "domain_resolver": "local"},
       {"tag": "foreign", "type": "tls", "server": "8.8.8.8:853", "detour": "🚀 默认代理"},
       {"tag": "fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/18"}
     ],
     "rules": [
-      {"clash_mode": "direct", "server": "public"},
+      {"clash_mode": "direct", "server": "local"},
       {"clash_mode": "global", "server": "fakeip"},
-      {"domain_suffix": [".lan",".local",".home.arpa"],"server": "dns-local"},
-      {"rule_set": ["geosite-cn", "geosite-steamcn", "geosite-apple"], "server": "public"},
+      {"domain_suffix": [".lan",".local",".home.arpa"],"server": "local"},
       {"domain_suffix": ["services.googleapis.cn", "googleapis.cn", "xn--ngstr-lra8j.com"], "server": "foreign"},
+      {"rule_set": ["geosite-cn", "geosite-steamcn", "geosite-apple"], "server": "local"},
       {"query_type": ["A", "AAAA"], "server": "fakeip", "rewrite_ttl": 60}
     ],
     "final": "domain_dns",
