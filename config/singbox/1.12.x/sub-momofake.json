@@ -9,7 +9,7 @@
     "rules": [
       {"clash_mode": "direct", "server": "local"},
       {"clash_mode": "global", "server": "fakeip"},
-      {"domain_suffix": [".lan",".local",".home.arpa"],"server": "local"},
+      {"domain_suffix": [".lan",".local",".home.arpa","miwifi.com"],"server": "local"},
       {"domain_suffix": ["services.googleapis.cn", "googleapis.cn", "xn--ngstr-lra8j.com"], "server": "foreign"},
       {"query_type": ["A", "AAAA"], "server": "fakeip", "rewrite_ttl": 60}
     ],
