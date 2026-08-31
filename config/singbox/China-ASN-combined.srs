@@ -1,0 +1,23 @@
+# China ASN Combined IP Routing Rules (SRS Format Example)
+# Generated for routing and geo-ip rule optimization
+
+# China Telecom ASNs
++asn:AS4134
++asn:AS4809
++asn:AS23724
+
+# China Unicom ASNs
++asn:AS4837
++asn:AS9929
+
+# China Mobile ASNs
++asn:AS9808
++asn:AS56040
++asn:AS56041
++asn:AS56042
+
+# China Education and Research Network (CERNET)
++asn:AS4538
+
+# China Science and Technology Network (CSTNET)
++asn:AS7497
