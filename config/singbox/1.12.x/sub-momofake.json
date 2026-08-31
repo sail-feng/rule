@@ -41,7 +41,6 @@
     {"tag": "🎯 全球直连", "type": "direct"}
   ],
   "route": {
-    "default_http_client": "web-downloader",
     "rules": [
       {"action": "sniff", "sniffer": ["http", "tls", "quic", "dns"]},
       {"inbound": "dns-in", "action": "hijack-dns"},
