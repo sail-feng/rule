@@ -72,7 +72,7 @@
       {"rule_set": "geoip-netflix", "outbound": "🎥 Netflix"},
     ],
     "rule_set": [
-      {"tag": "mt", "type": "remote", "format": "source", "url": "https://raw.githubusercontent.com/sail-feng/rule/refs/heads/master/mt.json", "download_detour": "dirct"},
+      {"tag": "mt", "type": "remote", "format": "source", "url": "https://raw.githubusercontent.com/sail-feng/rule/refs/heads/master/mt.json", "download_detour": "direct"},
       {"tag": "myproxy", "type": "remote", "format": "source", "url": "https://raw.githubusercontent.com/sail-feng/rule/refs/heads/master/myproxy.json", "download_detour": "direct"},
       {"tag": "geosite-ai", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai.srs", "download_detour": "direct"},
       {"tag": "geosite-youtube", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/youtube.srs", "download_detour": "direct"},
