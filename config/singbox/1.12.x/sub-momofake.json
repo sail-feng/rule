@@ -26,7 +26,7 @@
     {"tag": "🎵 TikTok", "type": "selector", "outbounds": ["🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🐸 手动选择", "🚀 默认代理"]},
     {"tag": "🎥 Netflix", "type": "selector", "outbounds": ["🚀 默认代理", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🐸 手动选择"]},
     {"tag": "💶 PayPal", "type": "selector", "outbounds": ["🚀 默认代理", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🐸 手动选择"]},
-    {"tag": "🎮 Steam", "type": "selector", "outbounds": ["🎯 全球直连", "🚀 默认代理", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动]},
+    {"tag": "🎮 Steam", "type": "selector", "outbounds": ["🎯 全球直连", "🚀 默认代理", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动"]},
     {"tag": "🪟 Microsoft", "type": "selector", "outbounds": ["🎯 全球直连", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🐸 手动选择"]},
     {"tag": "🐬 OneDrive", "type": "selector", "outbounds": ["🎯 全球直连", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🐸 手动选择"]},
     {"tag": "🍏 Apple", "type": "selector", "outbounds": ["🎯 全球直连", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动"]},
