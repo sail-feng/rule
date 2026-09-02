@@ -63,7 +63,7 @@
           "tendawifi.com"
         ],
         "action": "route",
-        "server": "local"
+        "server": "OP_DNS"
       },
       {
         "rule_set": [
