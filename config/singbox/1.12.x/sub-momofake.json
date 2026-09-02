@@ -38,6 +38,11 @@
         "server": "192.168.1.20" 
       }, 
       {
+        "tag": "CF_DNS", 
+        "type": "udp", 
+        "server": "1.1.1.1" 
+      }, 
+      {
         "tag": "fakeip",
         "type": "fakeip",
         "inet4_range": "198.18.0.0/15",
@@ -79,9 +84,13 @@
         "rewrite_ttl": 150
       }
     ],
-    "final": "domain_dns",
+    "final": "CF_DNS",
     "strategy": "ipv4_only",
-    "reverse_mapping": true
+    "cache_capacity": 16384,
+    "optimistic": {
+      "enabled": true,
+      "timeout": "5m0s"
+    }
   },
   "outbounds": [
     {"tag": "🚀 默认代理", "type": "selector", "outbounds": ["♻️ 自动选择", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🐸 手动选择"]},
