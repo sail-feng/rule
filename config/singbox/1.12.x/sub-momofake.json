@@ -103,6 +103,14 @@
     "auto_detect_interface": true,
     "default_domain_resolver": {"server": "domain_dns"}
   },
+  "http_clients": [ 
+    { 
+      "tag": "default", 
+      "version": 2, 
+      "stream_receive_window": 0, 
+      "connection_receive_window": 0 
+    } 
+  ], 
   "inbounds": [
     {
       "tag": "dns-in",
