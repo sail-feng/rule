@@ -1,15 +1,82 @@
 {
   "dns": {
     "servers": [
-      {"tag": "local", "type": "udp", "server": "192.168.1.20"},
-      {"tag": "domain_dns", "type": "udp", "server": "1.1.1.1"},
-      {"tag": "foreign", "type": "tls", "server": "8.8.8.8:853", "detour": "🚀 默认代理"},
-      {"tag": "fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/18"}
+      {
+        "type": "hosts",
+        "tag": "hosts",
+        "predefined": {
+          "dns.alidns.com": [
+            "223.5.5.5",
+            "223.6.6.6"
+          ],
+          "dns.google": [
+            "8.8.8.8",
+            "8.8.4.4"
+          ]
+        }
+      },
+      {
+        "tag": "google",
+        "type": "https",
+        "server": "dns.google",
+        "domain_resolver": "hosts",
+        "detour": "🚀 默认代理"
+      },
+      {
+        "tag": "ali",
+        "type": "https",
+        "server": "dns.alidns.com",
+        "domain_resolver": "hosts"
+      },
+      {
+        "type": "local",
+        "tag": "local_dns"
+      },
+        "type": "udp", 
+        "tag": "OP_DNS", 
+        "server": "192.168.1.20" 
+      }, 
+      {
+        "tag": "fakeip",
+        "type": "fakeip",
+        "inet4_range": "198.18.0.0/15",
+        "inet6_range": "fc00::/18"
+      }
     ],
     "rules": [
-      {"domain_suffix": [".lan",".local",".home.arpa",".miwifi.com"],"server": "local"},
-      {"domain_suffix": ["services.googleapis.cn", "googleapis.cn", "xn--ngstr-lra8j.com"], "server": "foreign"},
-      {"query_type": ["A", "AAAA"], "server": "fakeip", "rewrite_ttl": 60}
+     {
+        "domain_suffix": [
+          ".local",
+          ".lan",
+          ".home",
+          "router.asus.com",
+          "tplinkwifi.net",
+          "tplinklogin.net",
+          "miwifi.com",
+          "peiluyou.com",
+          "tendawifi.com"
+        ],
+        "action": "route",
+        "server": "local"
+      },
+      {
+        "rule_set": [
+          "geosite-apple",
+          "geosite-cn",
+          "geosite-steamcn"
+        ],
+        "action": "route",
+        "server": "ali"
+      },
+      {
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "action": "route",
+        "server": "fakeip",
+        "rewrite_ttl": 150
+      }
     ],
     "final": "domain_dns",
     "strategy": "ipv4_only",
