@@ -39,7 +39,7 @@
     {"tag": "♻️ 自动选择", "type": "urltest", "outbounds": [], "url": "https://www.gstatic.com/generate_204", "interval": "2m", "tolerance": 30, "idle_timeout": "30m"},
     {"tag": "🍃 延迟辅助", "type": "selector", "outbounds": ["🚀 默认代理", "🎯 全球直连"]},
     {"tag": "GLOBAL", "type": "selector", "outbounds": ["🚀 默认代理", "🧠 AI", "📹 YouTube", "🍀 Google", "👨‍💻 Github", "📲 Telegram", "🎵 TikTok", "🎥 Netflix", "💶 PayPal"]},
-    {"tag": "🎯 全球直连", "type": "direct"，"domain_resolver": "local"}
+    {"tag": "🎯 全球直连", "type": "direct", "domain_resolver": "local"}
   ],
   "route": {
     "rules": [
