@@ -193,7 +193,7 @@
     ],
     "final": "🐠 漏网之鱼",
     "auto_detect_interface": true,
-    "default_domain_resolver": {"server": "domain_dns"},
+    "default_domain_resolver": {"server": "CF_DNS"},
     "default_http_client": "default"
   },
   "http_clients": [ 
