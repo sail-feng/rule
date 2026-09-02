@@ -102,11 +102,11 @@
     "final": "🐠 漏网之鱼",
     "auto_detect_interface": true,
     "default_domain_resolver": {"server": "domain_dns"},
-    "default_http_client": "client-direct"
+    "default_http_client": "default"
   },
   "http_clients": [ 
     { 
-      "tag": "client-direct", 
+      "tag": "default", 
       "version": 2, 
       "stream_receive_window": 0, 
       "connection_receive_window": 0 
