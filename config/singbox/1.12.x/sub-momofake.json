@@ -43,8 +43,23 @@
   ],
   "route": {
     "rules": [
-      {"action": "sniff", "sniffer": ["http", "tls", "quic", "dns"]},
-      {"inbound": "dns-in", "action": "hijack-dns"},
+   { "rule_set": "cn", "invert": true, "action": "sniff"}, 
+   { "ip_cidr": "0.0.0.0/8", "action": "reject" }, 
+   { "type": "logical", "mode": "or", 
+     "rules": [ 
+          {"port": 53 },
+          {"protocol": "dns"}
+        ], 
+        "action": "hijack-dns" 
+    }, 
+    { "ip_cidr": [ 
+          "192.168.0.0/16",
+          "172.16.0.0/12", 
+          "127.0.0.0/8", 
+          "fe80::/10"
+        ], 
+        "outbound": "🎯 全球直连" 
+    }, 
       {"ip_is_private": true, "outbound": "🎯 全球直连"},
       {"port": [22], "outbound": "🎯 全球直连"},
       {"ip_cidr": ["5.28.195.2/32"], "outbound": "📲 Telegram"},
