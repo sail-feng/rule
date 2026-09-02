@@ -42,13 +42,7 @@
     {"tag": "🎯 全球直连", "type": "direct"}
   ],
   "http_clients": [
-    {
-      "tag": "client-direct"
-    }，
-      {
-      "tag": "client-proxy",
-      "detour": "♻️ 自动选择" 
-    }
+    {"tag": "client-direct"}，
   ], 
   "route": {
     "rules": [
