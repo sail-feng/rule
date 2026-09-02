@@ -41,7 +41,7 @@
     {"tag": "GLOBAL", "type": "selector", "outbounds": ["🚀 默认代理", "🧠 AI", "📹 YouTube", "🍀 Google", "👨‍💻 Github", "📲 Telegram", "🎵 TikTok", "🎥 Netflix", "💶 PayPal"]},
     {"tag": "🎯 全球直连", "type": "direct"}
   ],
-  "http_clients": 
+  "http_clients": [
     {
       "tag": "client-direct"
     }，
