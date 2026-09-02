@@ -15,6 +15,9 @@
     "strategy": "ipv4_only",
     "reverse_mapping": true
   },
+  "http_clients": [
+    {"tag": "client-direct"}
+  ], 
   "outbounds": [
     {"tag": "🚀 默认代理", "type": "selector", "outbounds": ["♻️ 自动选择", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🐸 手动选择"]},
     {"tag": "🧠 AI", "type": "selector", "outbounds": ["🇺🇲 美国自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🐸 手动选择"]},
@@ -41,9 +44,6 @@
     {"tag": "GLOBAL", "type": "selector", "outbounds": ["🚀 默认代理", "🧠 AI", "📹 YouTube", "🍀 Google", "👨‍💻 Github", "📲 Telegram", "🎵 TikTok", "🎥 Netflix", "💶 PayPal"]},
     {"tag": "🎯 全球直连", "type": "direct"}
   ],
-  "http_clients": [
-    {"tag": "client-direct"}，
-  ], 
   "route": {
     "rules": [
       {"action": "sniff", "sniffer": ["http", "tls", "quic", "dns"]},
