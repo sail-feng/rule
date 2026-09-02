@@ -43,7 +43,7 @@
   ],
   "route": {
     "rules": [
-   { "rule_set": "cn", "invert": true, "action": "sniff"}, 
+   { "rule_set": "geosite-cn", "invert": true, "action": "sniff"}, 
    { "ip_cidr": "0.0.0.0/8", "action": "reject" }, 
    { "type": "logical", "mode": "or", 
      "rules": [ 
