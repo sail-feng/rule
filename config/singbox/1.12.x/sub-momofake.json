@@ -233,7 +233,7 @@
       ],
       "auto_route": false,
       "auto_redirect": false,
-      "stack": "gvisor",
+      "stack": "mixed",
       "mtu": 1500
     }
   ],
