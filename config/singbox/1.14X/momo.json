@@ -149,7 +149,7 @@
       "type": "api",
       "listen": "0.0.0.0",
       "listen_port": 9090,
-      "secret": "passwd",
+      "secret": "jun101218",
       "dashboard": {
         "enabled": true,
         "path": "dashboard"
