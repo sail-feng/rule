@@ -165,7 +165,7 @@
     "clash_api": {
       "external_controller": "0.0.0.0:9095",
       "external_ui": "ui",
-      "secret": "passwd",
+      "secret": "jun101218",
       "default_mode": "Rule"
     }
   },
