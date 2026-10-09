@@ -124,7 +124,7 @@
       "type": "shadowsocks",
       "tag": "ss-in",
       "listen": "0.0.0.0",
-      "listen_port": 11024,         
+      "listen_port": 11025,         
       "method": "aes-256-gcm",
       "password": "jun101218"      
     },
